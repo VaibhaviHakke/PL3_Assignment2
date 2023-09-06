@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Regular Navigation Menu Styles */
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+#navbar li {
+    margin-right: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+#navbar a:hover {
+    color: #e42a2a;
+}
+
+/* Hamburger Icon Styles */
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+        position: absolute;
+        background-color: #f4f4f4;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    #navbar.active {
+        display: block;
+    }
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div id="navbar">
+            <ul>
+                <li><a href="#about">About the Course</a></li>
+                <li><a href="#outline">Course Outline</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+            </ul>
+        </div>
+        <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #967bb6;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+header h2{
+    color:antiquewhite;
+}
+/* Navigation Menu Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+    background-color: #E6E6FA;
+}
+
+nav li {
+    /* display: inline; */
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Course Description Styles */
+.container p {
+    font-style: italic;
+    color: #555;
+}
+
+/* Two-Column Layout for Sections */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+#about ul li{
+    padding: 2em 0;
+}
+
+/* Instructor Card Styles */
+.instructor-card {
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+.photo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 1em 0;
+}
